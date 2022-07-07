@@ -40,4 +40,13 @@ const requestHandler = (req, res) => {
   res.end();
 };
 
-module.exports = requestHandler;
+//module.exports = requestHandler;
+
+module.exports = {
+  handler: requestHandler,
+  someText: "Some hard coded text",
+};
+//module. 생략가능
+
+// module.exports.handler = requestHandler;
+// exports.someText = 'some text';
